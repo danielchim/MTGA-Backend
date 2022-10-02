@@ -40,9 +40,4 @@ module.exports = async function launcherRoutes(app, _opts) {
         return AccountController.logout(request, reply);
     });
 
-    // Launcher Route //
-    app.get('/launcher/weblauncher/start', async (request, reply) => {
-        return WeblauncherController.launch(request, reply);
-    });
-
 }
